@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Valet Parking Checkout</title>
+</head>
+
+<body id="body">
+    <header id="header">
+        <h1>Valet Parking Checkout</h1>
+    </header>
+    <main>
+        <div id="checkoutform">
+            <form name="checkoutform" action="/success">
+                <h2>Vechicle Check-out</h2>
+                <div class="flexingrow">
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="customername"><strong>Customer Name</strong></label>
+                        <label style="margin-bottom: 10px;" for="customername"><%= vehicle.CustomerName%></label>
+                    </div>
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="phonenumber"><strong>Phone Number</strong></label>
+                        <label style="margin-bottom: 10px;" for="phonenumber"><%= vehicle.CustomerNumber%></label>
+                    </div>
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="vehiclenumber"><strong>Vehicle Number</strong></label>
+                        <label style="margin-bottom: 10px;" for="vehiclenumber"><%= vehicle.VehicleNumber%></label>
+                    </div>
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="vehicletype"><strong>Vehicle Type</strong></label>
+                        <label style="margin-bottom: 10px;" for="vehicletype"><%= vehicle.VehicleType%></label>
+                    </div>
+                </div>
+                <div class="flexingrow">
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="vehiclemodel"><strong>Vehicle Model</strong></label>
+                        <label style="margin-bottom: 10px;" for="vehiclemodel"><%= vehicle.VehicleModel%></label>
+                    </div>
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="checkintime"><strong>Checkin Time</strong></label>
+                        <label style="margin-bottom: 10px;" for="checkintime"><%= vehicle.CheckinTime%></label>
+                    </div>
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="checkouttime"><strong>Checkout Time</strong></label>
+                        <label style="margin-bottom: 10px;" for="checkouttime"><%= checkouttime%></label>
+                    </div>
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="duration"><strong>Duration</strong></label>
+                        <label style="margin-bottom: 10px;" for="duration"><%= timedifference%> min</label>
+                    </div>
+                </div>
+                <div class="topay">
+                    <h3>To pay</h3>
+                    <h1><strong>RS.<%= cost%></strong></h1>
+                </div>
+                <div class="center">
+                    <a href="/success?id=<%= vehicle._id%>">Proceed to pay</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

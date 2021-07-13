@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Valet Parking Checkin</title>
+</head>
+
+<body id="body">
+    <header id="header">
+        <h1>Valet Parking Check-In</h1>
+    </header>
+    <main id="main">
+        <div id="checkinform">
+            <form action="/details" name="checkinform" method="POST">
+                <h2>Vechicle Check-In</h2>
+                <div class="flexingrow">
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="vehiclenumber"><strong>Vehicle Number</strong></label>
+                        <input style="margin-bottom: 10px;" type="text" pattern="[A-Za-z][A-Za-z]\s[0-9][0-9]\s[A-Za-z ][A-Za-z]\s[0-9][0-9][0-9][0-9]" id="vehiclenumber"
+                            placeholder="Your Vehicle Number" name="vehiclenumber" required>
+                    </div>
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="vehicletype"><strong>Vehicle Type</strong></label>
+                        <input style="margin-bottom: 10px;" type="text" id="vehicletype" placeholder="Your Vehicle Type"
+                            name="vehicletype" required>
+                    </div>
+                </div>
+                <div class="flexingrow">
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="vehiclemodel"><strong>Vehicle Model</strong></label>
+                        <input style="margin-bottom: 10px;" type="text" id="vehiclemodel"
+                            placeholder="Your Vehicle Model" name="vehiclemodel" required>
+                    </div>
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="phonenumber"><strong>Phone Number</strong></label>
+                        <input style="margin-bottom: 10px;" type="tel" pattern="[6-9][0-9]{9}" id="phonenumber"
+                            placeholder="Your Phone Number" name="phonenumber" required>
+                    </div>
+                </div>
+                <div class="flexingrow">
+                    <div class="flexingcolumn">
+                        <label style="margin-bottom: 10px;" for="customername"><strong>Customer Name</strong></label>
+                        <input type="text" id="customername" placeholder="Your Name" name="customername" required>
+                    </div>
+                </div>
+                <div class="center">
+                    <button type="submit">Check in</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

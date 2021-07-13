@@ -1,0 +1,131 @@
+html,body{
+    margin: 0;
+    height: 100%;
+    background-color: rgb(226, 226, 226);
+}
+#body{
+    position: relative;
+    min-height: 100%;
+}
+
+#header{
+    margin: 0;
+    background-color: white;
+}
+
+#header h1{
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.checkinbutton button{
+    margin-top: 12px;
+    margin-right: 20px;
+    background-color : rgb(31, 110, 255);
+    border-radius: 5px;
+    padding: 8px;
+    border:rgb(226, 226, 226);
+    color: white;
+}
+
+#checkinform, #checkoutform{
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#checkinform h2, #checkoutform h2{
+    padding: 15px;
+    text-align: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+#checkinform button, #checkoutform a, .successbutton button{
+    background-color : rgb(31, 110, 255);
+    border-radius: 5px;
+    padding: 8px;
+    border:rgb(226, 226, 226);
+    color: white;
+    margin: 20px;
+}
+
+.topay{
+    background-color: rgb(228, 247, 255);
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+.topay strong{
+    color: rgb(31,110,255);
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexingrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flexingcolumn{
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.entries{
+    border-collapse:separate;
+    border-spacing:0 10px;
+}
+
+tr:hover {background-color: rgb(31, 110, 255);}
+
+tr{
+    background-color: white;
+}
+
+th {
+    background-color: white;
+    color:black
+  }
+
+td{
+    text-align: center;
+    border: none;
+    color: black;
+}
+
+th, td{
+    padding:20px;
+}
+
+.successbody{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.typedec{
+    background-color: rgb(252, 192, 26);
+    padding: 5px;
+    border-radius: 25px;
+}
